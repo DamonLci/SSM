@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="BookManagerSystem:war exploded">
+    <output-path>/usr/local/apache-tomcat-8.0.48/wtpwebapps</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="BookManagerSystem/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="BookManagerSystem" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

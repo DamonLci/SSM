@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <constant name="struts.multipart.maxSize" value="1000000000"/>
+    <package name="defalut" namespace="/" extends="struts-default">
+        <action name="login" class="org.bms.action.UserAction" method="execute">
+            <result name="success" type="dispatcher">
+                <param name="location">/success.jsp</param>
+
+            </result>
+
+            <result name="fail" type="dispatcher">/error.jsp</result>
+        </action>
+
+    </package>
+    <package name="addBook" namespace="/" extends="struts-default">
+        <action name="addBook" class="org.bms.action.BookAddAction" method="execute">
+            <result name="success" type="dispatcher">
+                <param name="location">/success.jsp</param>
+            </result>
+            <result name="fail" type="dispatcher">/error.jsp</result>
+        </action>
+    <action name="upload" class="org.bms.action.FileUploadAction" method="execute">
+        <result name="success" type="dispatcher">
+            <param name="location">/success.jsp</param>
+        </result>
+    </action>
+    </package>
+        </struts>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="BookDao">
+
+    <insert id="insert" parameterType="BookBean"
+            useGeneratedKeys="true" keyProperty="bookId">
+  		insert into book(bookName,bookAuthor,bookPublish,bookPublishTime,bookPrice,bookCount,bookDescribe)
+  		values
+  		(#{bookName},#{bookAuthor},#{bookPublish},#{bookPublishTime},#{bookPrice},#{bookCount},#{bookDescribe});
+  	</insert>
+	<update id="updateImgById" parameterType="BookBean">
+        UPDATE book set bookImg=#{bookimg} where bookId=#{bookId}
+    </update>
+</mapper>
