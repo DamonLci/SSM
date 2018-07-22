@@ -35,7 +35,7 @@ public class MybatisUtil {
      * @return
      */
     public static SqlSession getsession() {
-        SqlSession session = getSqlSessionFactory().openSession();
+            SqlSession session = getSqlSessionFactory().openSession();
         return session;
     }
     /**

@@ -3,15 +3,44 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="BookDao">
+<mapper namespace="org.bms.dao.IBookDao">
 
-    <insert id="insert" parameterType="BookBean"
+    <resultMap id="BookMaMap" type="org.bms.bean.BookBean">
+        <id property="bookId" column=" bookId"></id>
+        <result property="bookName" column="bookName"></result>
+        <result property="bookImg" column="bookImg"></result>
+        <result property="bookAuthor" column="bookAuthor"></result>
+        <result property="bookPublish" column="bookPublish"></result>
+        <result property="bookPublishTime" column="bookPublishTime"></result>
+        <result property="bookPrice" column="bookPrice"></result>
+        <result property="bookCount" column="bookCount"></result>
+        <result property="bookDescribe" column="bookDescribe"></result>
+    </resultMap>
+
+
+    <insert id="addBook" parameterType="org.bms.bean.BookBean"
             useGeneratedKeys="true" keyProperty="bookId">
-  		insert into book(bookName,bookAuthor,bookPublish,bookPublishTime,bookPrice,bookCount,bookDescribe)
+  		insert into book(bookName,bookImg,bookAuthor,bookPublish,bookPublishTime,bookPrice,bookCount,bookDescribe)
   		values
-  		(#{bookName},#{bookAuthor},#{bookPublish},#{bookPublishTime},#{bookPrice},#{bookCount},#{bookDescribe});
+  		(#{bookName},#{bookImg},#{bookAuthor},#{bookPublish},#{bookPublishTime},#{bookPrice},#{bookCount},#{bookDescribe});
   	</insert>
-	<update id="updateImgById" parameterType="BookBean">
-        UPDATE book set bookImg=#{bookimg} where bookId=#{bookId}
-    </update>
+
+
+	<select id="queryByAll"  resultMap="BookMaMap">
+		select * from book
+	</select>
+
+	<select id="queryById" parameterType="int" resultMap="BookMaMap">
+		select * from book where bookId=#{bookId}
+	</select>
+
+    <delete id="delBook" parameterType="int">
+        delete from book where bookId=#{bookId}
+    </delete>
+
+    <select id="queryByName" parameterType="String" resultMap="BookMaMap">
+		select * from book where bookName=#{bookName}
+	</select>
+
+
 </mapper>

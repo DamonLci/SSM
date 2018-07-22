@@ -1,12 +1,22 @@
 package org.bms.action;
 
-import com.opensymphony.xwork2.ModelDriven;
 import org.bms.bean.BookBean;
-import org.bms.service.BookAddService;
-import org.bms.service.impl.BookAddServiceImpl;
+import org.bms.service.IBookService;
+import org.bms.service.impl.BookServiceImpl;
+import org.bms.util.FileUploadUtil;
+import org.codehaus.jackson.map.ObjectMapper;
 
-public class BookAddAction implements ModelDriven {
+public class BookAddAction {
     private BookBean bookBean;
+    private FileUploadUtil f = new FileUploadUtil();
+
+    public FileUploadUtil getF() {
+        return f;
+    }
+
+    public void setF(FileUploadUtil f) {
+        this.f = f;
+    }
 
     public BookBean getBookBean() {
         return bookBean;
@@ -16,17 +26,18 @@ public class BookAddAction implements ModelDriven {
         this.bookBean = bookBean;
     }
 
-    @Override
-    public Object getModel() {
-        if(bookBean!=null){
-            bookBean=new BookBean();
-        }
-        return bookBean;
+    private IBookService bookService;
+
+    public void setBookService(IBookService bookService) {
+        this.bookService = bookService;
     }
-    public  String execute(){
-        String res="";
-        BookAddService bookAddService=new BookAddServiceImpl();
-        res=bookAddService.addBook(bookBean);
+
+    public String execute() {
+        f.FileUpload();
+        String fileName = f.getUploadImageFileName();
+        String res = "";
+        bookBean.setBookImg(fileName);
+        res = bookService.addBook(bookBean);
         return res;
 
     }

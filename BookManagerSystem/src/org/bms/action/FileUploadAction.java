@@ -52,7 +52,9 @@ public class FileUploadAction {
         //可以通过上下文对象获取项目中的任何一个文件
         ServletContext context=ServletActionContext.getServletContext();
         HttpServletRequest request=ServletActionContext.getRequest();
-        int bookId= Integer.parseInt(request.getParameter("bookId"));
+        System.out.println(uploadImageFileName);
+        System.out.println(uploadImage);
+        System.out.println(uploadImageContentType);
         String path=context.getRealPath("/upload");
         System.out.println(path);
         File file=new File(path);

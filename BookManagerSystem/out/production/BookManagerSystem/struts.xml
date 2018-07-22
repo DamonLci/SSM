@@ -7,7 +7,7 @@
 <struts>
     <constant name="struts.multipart.maxSize" value="1000000000"/>
     <package name="defalut" namespace="/" extends="struts-default">
-        <action name="login" class="org.bms.action.UserAction" method="execute">
+        <action name="login" class="loginAction" method="execute">
             <result name="success" type="dispatcher">
                 <param name="location">/success.jsp</param>
 
@@ -18,16 +18,34 @@
 
     </package>
     <package name="addBook" namespace="/" extends="struts-default">
-        <action name="addBook" class="org.bms.action.BookAddAction" method="execute">
+        <action name="addBook" class="bookAdd" method="execute">
             <result name="success" type="dispatcher">
                 <param name="location">/success.jsp</param>
             </result>
             <result name="fail" type="dispatcher">/error.jsp</result>
         </action>
-    <action name="upload" class="org.bms.action.FileUploadAction" method="execute">
+    <action name="bookList" class="bookList" method="execute">
         <result name="success" type="dispatcher">
-            <param name="location">/success.jsp</param>
+            <param name="location">/List.jsp</param>
         </result>
     </action>
+        <action name="bookDetail" class="bookDetail" method="execute">
+            <result name="success" type="dispatcher">
+                <param name="location">/bookDetail.jsp</param>
+            </result>
+        </action>
+        <action name="delBook" class="delBook" method="execute">
+
+        </action>
+        
+       
+    </package>
+    <package name="json" namespace="/" extends="json-default">
+        <action name="checkBook" class="checkBook">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+
     </package>
         </struts>

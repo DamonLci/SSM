@@ -3,24 +3,24 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="UserDao">
+<mapper namespace="org.bms.dao.IUserDao">
 
-    <insert id="insert" parameterType="UserBean"
+    <insert id="insert" parameterType="org.bms.bean.UserBean"
             useGeneratedKeys="true" keyProperty="uid">
   		insert into user(username,userpwd) values(#{username},#{userpwd});
   	</insert>
 
 
-    <select id="findByName" parameterType="String" resultMap="map">
+    <select id="queryByName" parameterType="java.lang.String" resultMap="maps">
   		select *
   		 from user where username=#{userName}
   	</select>
+    
+
     <!-- 输出映射为hashmap id:map的名称   type：映射成什么样的对象 -->
-    <resultMap id="map" type="UserBean">
+    <resultMap id="maps" type="org.bms.bean.UserBean">
         <id property="uid" column="uid"></id>
         <result property="userName" column="username"></result>
         <result property="userPwd" column="userpwd"></result>
     </resultMap>
-
-
 </mapper>

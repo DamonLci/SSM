@@ -1,11 +1,20 @@
 package org.bms.action;
 
-import com.opensymphony.xwork2.ModelDriven;
 import org.bms.bean.UserBean;
-import org.bms.service.UserService;
+import org.bms.service.IUserService;
 import org.bms.service.impl.UserServiceImpl;
 
-public class UserAction implements ModelDriven {
+public class UserAction  {
+    private IUserService userService;
+
+    public IUserService getUserService() {
+        return userService;
+    }
+
+    public void setUserService(IUserService userService) {
+        this.userService = userService;
+    }
+
     private UserBean userBean;
 
     public UserBean getUserBean() {
@@ -16,19 +25,9 @@ public class UserAction implements ModelDriven {
         this.userBean = userBean;
     }
 
-    @Override
-    public Object getModel() {
-        // TODO Auto-generated method stub
-        if(userBean!=null){
-            userBean=new UserBean();
-        }
-        return userBean;
-    }
+
     public String  execute(){
-        UserService userService=new UserServiceImpl();
-        //System.out.println(userBean);
-        //System.out.println(userBean.getUserName());
-        String res=userService.UserLogin(userBean.getUserName(),userBean.getUserPwd());
+        String res= userService.UserLogin(userBean.getUserName(),userBean.getUserPwd());
         return res;
     }
 }
