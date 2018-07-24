@@ -9,5 +9,9 @@
         </id>
         <property name="userName" column="userName"></property>
         <property name="userPwd" column="userPwd"></property>
+        <set name="orderBeanSet" table="t_s_o">
+            <key column="ss_s_id"></key>
+            <one-to-many class="OrderBean"></one-to-many>
+        </set>
     </class>
 </hibernate-mapping>

@@ -14,9 +14,9 @@ import java.io.IOException;
  * @Date 2018/7/22 下午5:46
  * @Version 1.0
  **/
-public class CheckBookAction  implements ModelDriven{
+public class CheckBookAction {
     private IBookService bookService;
-    private BookBean bookBean =new BookBean();
+    private BookBean bookBean ;
     public void setBookService(IBookService bookService) {
         this.bookService = bookService;
     }
@@ -45,8 +45,11 @@ public class CheckBookAction  implements ModelDriven{
         return "success";
     }
 
-    @Override
-    public Object getModel() {
+    public BookBean getBookBean() {
         return bookBean;
+    }
+
+    public void setBookBean(BookBean bookBean) {
+        this.bookBean = bookBean;
     }
 }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="StOrBean" table="t_s_o">
+        <id name="id" column="ss_id" type="int">
+            <generator class="increment"/>
+        </id>
+        <property name="da" column="ss_date"></property>
+        <many-to-one name="studentBean" cascade="save-update" class="StudentBean"  column="ss_s_id"></many-to-one>
+        <many-to-one name="orderBean" cascade="save-update" class="OrderBean" column="ss_o_id"></many-to-one>
+    </class>
+</hibernate-mapping>

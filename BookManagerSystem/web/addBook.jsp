@@ -16,6 +16,10 @@
             color: red;
             display: none;
         }
+        #xmTanImg{
+            width: 300px;
+            height: 300px;
+        }
     </style>
 
 </head>
@@ -51,7 +55,7 @@
             anync: true,
             dataType: "json",
             data: {
-                bookName: $("#bookName").val(),
+               "bookBean.bookName" : $("#bookName").val(),
             },
 
 
