@@ -1,5 +1,3 @@
-import javax.persistence.Entity;
-import javax.persistence.Table;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -11,7 +9,6 @@ import java.util.Set;
  * @Date 2018/7/23 上午11:12
  * @Version 1.0
  **/
-
 public class OrderBean {
     private int id;
     private Date da;

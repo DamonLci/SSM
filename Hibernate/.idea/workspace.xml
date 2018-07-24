@@ -10,71 +10,52 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="HibeTest@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="HibeTest@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="HibeTest@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="HibeTest: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="137" column="20" selection-start-line="137" selection-start-column="20" selection-end-line="137" selection-end-column="20" />
+            <state relative-caret-position="30">
+              <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/42e83120-9b65-429a-8d91-f5aba21b2260/console.sql">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="UserBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UserBean.java">
+      <file leaf-file-name="HibernateUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HibernateUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1207#1208#0" expanded="true" />
-                <element signature="e#1239#1240#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BookBean.java">
+      <file leaf-file-name="StOrBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/StOrBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="165">
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="35" />
+              <folding>
+                <element signature="e#298#299#0" expanded="true" />
+                <element signature="e#323#324#0" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#384#385#0" expanded="true" />
+                <element signature="e#427#428#0" expanded="true" />
+                <element signature="e#461#462#0" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
+                <element signature="e#566#567#0" expanded="true" />
+                <element signature="e#605#606#0" expanded="true" />
+                <element signature="e#637#638#0" expanded="true" />
+                <element signature="e#690#691#0" expanded="true" />
+                <element signature="e#732#733#0" expanded="true" />
+                <element signature="e#759#760#0" expanded="true" />
+                <element signature="e#784#785#0" expanded="true" />
+                <element signature="e#818#819#0" expanded="true" />
+                <element signature="e#846#847#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,11 +69,38 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="UserOrder.hbm.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UserOrder.hbm.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="hibernate.cfg.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="4" selection-start-line="24" selection-end-line="30" selection-end-column="75" />
+            <state relative-caret-position="330">
+              <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/StudentBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#712#713#0" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
+                <element signature="e#797#798#0" expanded="true" />
+                <element signature="e#832#833#0" expanded="true" />
+                <element signature="e#896#897#0" expanded="true" />
+                <element signature="e#944#945#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,10 +108,16 @@
       <file leaf-file-name="OrderBean.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/OrderBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="465">
+              <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#326#339#0" expanded="true" />
+                <element signature="e#425#426#0" expanded="true" />
+                <element signature="e#453#454#0" expanded="true" />
+                <element signature="e#779#780#0" expanded="true" />
+                <element signature="e#825#826#0" expanded="true" />
+                <element signature="e#853#854#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,16 +153,13 @@
       <list>
         <option value="$PROJECT_DIR$/src/hibe.html" />
         <option value="$PROJECT_DIR$/src/HibernateUtil.java" />
+        <option value="$PROJECT_DIR$/src/OrderBean.java" />
         <option value="$PROJECT_DIR$/src/StOrBean.java" />
         <option value="$PROJECT_DIR$/src/UserOrder.hbm.xml" />
         <option value="$PROJECT_DIR$/src/Order.hbm.xml" />
         <option value="$PROJECT_DIR$/src/User.hbm.xml" />
         <option value="$PROJECT_DIR$/src/StudentBean.java" />
-        <option value="$PROJECT_DIR$/src/ehcache.xml" />
-        <option value="$PROJECT_DIR$/src/UserBean.java" />
         <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/OrderBean.java" />
-        <option value="$PROJECT_DIR$/src/BookBean.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
@@ -163,8 +174,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="43" />
-    <option name="y" value="23" />
+    <option name="x" value="46" />
+    <option name="y" value="30" />
     <option name="width" value="1831" />
     <option name="height" value="1079" />
   </component>
@@ -173,6 +184,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -189,19 +201,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="da&#9;ACTION&#9;ActivateDatabaseToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="XML" />
-    <property name="database.console.LAST_STATE" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -226,7 +234,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Main.test7">
+  <component name="RunManager" selected="JUnit.Main.testQbcOne">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -264,13 +272,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="Main.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hibernate" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <option name="METHOD_NAME" value="test5" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -281,13 +289,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="Main.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hibernate" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <option name="METHOD_NAME" value="test7" />
+      <option name="METHOD_NAME" value="test4" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -354,19 +362,19 @@
       <listeners />
     </configuration>
     <list>
+      <item itemvalue="JUnit.Main.test3" />
+      <item itemvalue="JUnit.Main.test4" />
       <item itemvalue="JUnit.Main.queryTest" />
       <item itemvalue="JUnit.Main.queryTest2" />
       <item itemvalue="JUnit.Main.testQbcOne" />
-      <item itemvalue="JUnit.Main.test5" />
-      <item itemvalue="JUnit.Main.test7" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Main.test7" />
-        <item itemvalue="JUnit.Main.test5" />
         <item itemvalue="JUnit.Main.testQbcOne" />
         <item itemvalue="JUnit.Main.queryTest2" />
         <item itemvalue="JUnit.Main.queryTest" />
+        <item itemvalue="JUnit.Main.test3" />
+        <item itemvalue="JUnit.Main.test4" />
       </list>
     </recent_temporary>
   </component>
@@ -388,12 +396,32 @@
       <workItem from="1532310286256" duration="5274000" />
       <workItem from="1532317844916" duration="319000" />
       <workItem from="1532318858382" duration="5732000" />
-      <workItem from="1532343951940" duration="7839000" />
-      <workItem from="1532419441931" duration="732000" />
+      <workItem from="1532343951940" duration="1872000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="Main_test3 - 2018.07.23 at 19h 09m 26s.xml">
+      <configuration name="Main.test3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Main_queryTest - 2018.07.23 at 19h 09m 44s.xml">
+      <configuration name="Main.queryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Main_queryTest - 2018.07.23 at 19h 11m 07s.xml">
+      <configuration name="Main.queryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Main_queryTest - 2018.07.23 at 19h 13m 23s.xml">
+      <configuration name="Main.queryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Main_queryTest - 2018.07.23 at 19h 14m 58s.xml">
+      <configuration name="Main.queryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Main_queryTest - 2018.07.23 at 19h 15m 19s.xml">
+      <configuration name="Main.queryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Main_queryTest - 2018.07.23 at 19h 19m 08s.xml">
+      <configuration name="Main.queryTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="Main_queryTest2 - 2018.07.23 at 19h 21m 08s.xml">
       <configuration name="Main.queryTest2" configurationId="JUnit" />
     </history-entry>
@@ -403,62 +431,41 @@
     <history-entry file="Main_testQbcOne - 2018.07.23 at 19h 29m 09s.xml">
       <configuration name="Main.testQbcOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Main_test5 - 2018.07.24 at 11h 54m 59s.xml">
-      <configuration name="Main.test5" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Main_test5 - 2018.07.24 at 11h 59m 40s.xml">
-      <configuration name="Main.test5" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Main_test5 - 2018.07.24 at 12h 11m 47s.xml">
-      <configuration name="Main.test5" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Main_test7 - 2018.07.24 at 15h 40m 01s.xml">
-      <configuration name="Main.test7" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Main_test7 - 2018.07.24 at 15h 40m 37s.xml">
-      <configuration name="Main.test7" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Main_test7 - 2018.07.24 at 15h 41m 52s.xml">
-      <configuration name="Main.test7" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Main_test7 - 2018.07.24 at 16h 07m 25s.xml">
-      <configuration name="Main.test7" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26893000" />
+    <option name="totallyTimeSpent" value="20194000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="23" width="1831" height="1079" extended-state="0" />
+    <frame x="46" y="30" width="1831" height="1079" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50027305" side_tool="true" visible="true" weight="0.32935324" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.18514472" side_tool="true" visible="true" weight="0.48059702" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.3298744" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49371928" weight="0.32935324" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49535772" weight="0.32935324" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8132168" weight="0.42587066" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8148553" visible="true" weight="0.48059702" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Mybatis datasource" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Persistence" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24249044" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10103768" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Database Console" sideWeight="0.49972692" weight="0.32935324" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -480,10 +487,71 @@
           <properties />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="1" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/OrderBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#326#339#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#825#826#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Order.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/User.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="37" column="16" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HibernateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/User.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/StudentBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -506,6 +574,12 @@
           <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#326#339#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#825#826#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -570,6 +644,12 @@
           <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#326#339#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#825#826#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -804,6 +884,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hibe.html" />
+    <entry file="file://$PROJECT_DIR$/src/HibernateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/UserOrder.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -836,9 +926,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/OrderBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#326#339#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#825#826#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/User.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/StudentBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
+        <state relative-caret-position="262">
           <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -852,27 +965,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ehcache.xml">
+    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HibernateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/User.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        <state relative-caret-position="330">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -883,72 +979,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="4" selection-start-line="24" selection-end-line="30" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/OrderBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://42e83120-9b65-429a-8d91-f5aba21b2260/schema/hibetest/table/t_user.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1207#1208#0" expanded="true" />
-            <element signature="e#1239#1240#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BookBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="137" column="20" selection-start-line="137" selection-start-column="20" selection-end-line="137" selection-end-column="20" />
+        <state relative-caret-position="30">
+          <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
         </state>
       </provider>
-    </entry>
-    <entry file="das://42e83120-9b65-429a-8d91-f5aba21b2260/schema/hibetest/table/t_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://42e83120-9b65-429a-8d91-f5aba21b2260/schema/hibetest/table/t_book">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/42e83120-9b65-429a-8d91-f5aba21b2260/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
@@ -1002,11 +1038,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Hibernate</last-edited>
+          <last-edited>Hibe_Relation</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.19644724" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
