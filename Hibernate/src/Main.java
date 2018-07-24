@@ -115,4 +115,40 @@ public class Main {
             System.out.println(sts);
         }
     }
+
+    @Test
+    public void test5(){
+        SessionFactory sessionFactory=HibernateUtil.getSessionFactory();
+
+        Session session=sessionFactory.openSession();
+        Transaction transaction=session.beginTransaction();
+        StudentBean st=session.load(StudentBean.class,1);
+        System.out.println(st);
+        transaction.commit();
+        session.close();
+
+        Session session1=sessionFactory.openSession();
+        Transaction transaction1=session.beginTransaction();
+        StudentBean st1=session.load(StudentBean.class,1);
+        System.out.println(st1);
+        transaction1.commit();
+        session1.close();
+    }
+    @Test
+    public void test7(){
+        Session session=HibernateUtil.getSession();
+        Transaction transaction=session.beginTransaction();
+        UserBean ubs=new UserBean();
+        ubs.setUserName("啊啊啊");
+        ubs.setUserPwd("123");
+        BookBean bookBean=new BookBean();
+        bookBean.setBookName("是是是");
+        bookBean.setBookPrice("123");
+        bookBean.setUb(ubs);
+        ubs.getBookBeans().add(bookBean);
+        session.save(ubs);
+        transaction.commit();
+
+
+    }
 }

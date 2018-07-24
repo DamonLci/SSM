@@ -22,8 +22,18 @@
         <!-- Drop and re-create the database schema on startup -->
         <property name="hbm2ddl.auto">update</property>
 
+<!--        &lt;!&ndash; 使用二级缓存 &ndash;&gt;
+        <property name="hibernate.cache.use_second_level_cache">true</property>
+        &lt;!&ndash;设置缓存的类型，设置缓存工产&ndash;&gt;
+        <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+
+        &lt;!&ndash; 开启查询缓存 &ndash;&gt;
+        <property name="hibernate.cache.use_query_cache">true</property>-->
+
         <mapping resource="User.hbm.xml"></mapping>
         <mapping resource="Order.hbm.xml"></mapping>
         <mapping resource="UserOrder.hbm.xml"></mapping>
+        <mapping class="UserBean"></mapping>
+        <mapping class="BookBean"></mapping>
     </session-factory>
 </hibernate-configuration>
