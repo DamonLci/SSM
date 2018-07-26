@@ -4,6 +4,8 @@ import org.book.bean.CommentBean;
 import org.book.dao.ICommentDao;
 import org.book.dao.impl.ICommentDaoImpl;
 import org.book.service.ICommentService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  * @ClassName CommentServiceImpl
@@ -12,8 +14,10 @@ import org.book.service.ICommentService;
  * @Date 2018/7/24 下午11:27
  * @Version 1.0
  **/
+@Service
 public class CommentServiceImpl implements ICommentService {
-    private ICommentDao commentDao=new ICommentDaoImpl();
+    @Autowired
+    private ICommentDao commentDao;
     /**
      * 添加评论
      *

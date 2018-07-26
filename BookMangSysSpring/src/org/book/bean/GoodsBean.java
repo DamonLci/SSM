@@ -26,6 +26,19 @@ public class GoodsBean {
     private double goodsPrice;
     @Column(name = "g_img")
     private String goodsImg;
+
+    @Override
+    public String toString() {
+        return "GoodsBean{" +
+                "id=" + id +
+                ", goodsName='" + goodsName + '\'' +
+                ", category='" + category + '\'' +
+                ", goodsPrice=" + goodsPrice +
+                ", goodsImg='" + goodsImg + '\'' +
+                ", commentBeanSet=" + commentBeanSet +
+                '}';
+    }
+
     @OneToMany(mappedBy="goodsBean",cascade = CascadeType.ALL)
     private Set<CommentBean> commentBeanSet =new HashSet<CommentBean>();
 

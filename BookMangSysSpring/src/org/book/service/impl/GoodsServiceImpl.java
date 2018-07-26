@@ -2,8 +2,10 @@ package org.book.service.impl;
 
 import org.book.bean.GoodsBean;
 import org.book.dao.IGoodsDao;
-import org.book.dao.impl.IGoodsActionDaoImpl;
+import org.book.dao.impl.IGoodsDaoImpl;
 import org.book.service.IGoodsService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -14,8 +16,10 @@ import java.util.List;
  * @Date 2018/7/24 下午11:27
  * @Version 1.0
  **/
+@Service
 public class GoodsServiceImpl implements IGoodsService {
-    private IGoodsDao goodsDao=new IGoodsActionDaoImpl();
+    @Autowired
+    private IGoodsDao goodsDao;
     /**
      * 查询所有商品
      *

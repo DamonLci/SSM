@@ -2,8 +2,9 @@ package org.book.service.impl;
 
 import org.book.bean.UserBean;
 import org.book.dao.IUserDao;
-import org.book.dao.impl.IUserDaoImpl;
 import org.book.service.IUserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  * @ClassName UserServiceImpl
@@ -12,8 +13,12 @@ import org.book.service.IUserService;
  * @Date 2018/7/24 下午11:26
  * @Version 1.0
  **/
+@Service
 public class UserServiceImpl implements IUserService {
-    private IUserDao userDao=new IUserDaoImpl();
+    @Autowired
+    private IUserDao userDao;
+
+
     /**
      * 登录
      *
