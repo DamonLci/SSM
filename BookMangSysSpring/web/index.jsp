@@ -11,6 +11,13 @@
     <title>$Title$</title>
   </head>
   <body>
-  ${requestScope.name}
+  <form method="post" action="login.action">
+    <label>登录名</label> <input name="userName" type="text"/>
+    <label>密码</label> <input name="userPwd" type="password"/>
+    <input type="submit" value="登录"/>
+
+
+  </form>
+
   </body>
 </html>

@@ -21,7 +21,7 @@ public interface ICommentDao {
 
     /**
      * 插入名称通过商品ID
-     * @param goodsId
+     * @param commentBean
      */
-    public void insertComment(int goodsId);
+    public void insertComment(CommentBean commentBean);
 }

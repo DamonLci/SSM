@@ -1,5 +1,6 @@
 package org.book.bean;
 
+import javax.persistence.*;
 import java.util.Date;
 
 /**
@@ -9,11 +10,21 @@ import java.util.Date;
  * @Date 2018/7/24 下午7:24
  * @Version 1.0
  **/
+@Entity
+@Table(name = "t_comment")
 public class CommentBean {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "c_id")
     private int id;
-    private int userId;
-    private int goodsId;
+    @Column(name = "c_name")
+    private String userName;
+    @ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    @JoinColumn(name = "c_g_id")
+    private GoodsBean goodsBean;
+    @Column(name = "c_content")
     private String commentContent;
+    @Column(name = "c_date")
     private Date date;
 
     public Date getDate() {
@@ -32,20 +43,20 @@ public class CommentBean {
         this.id = id;
     }
 
-    public int getUserId() {
-        return userId;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public int getGoodsId() {
-        return goodsId;
+    public GoodsBean getGoodsBean() {
+        return goodsBean;
     }
 
-    public void setGoodsId(int goodsId) {
-        this.goodsId = goodsId;
+    public void setGoodsBean(GoodsBean goodsBean) {
+        this.goodsBean = goodsBean;
     }
 
     public String getCommentContent() {

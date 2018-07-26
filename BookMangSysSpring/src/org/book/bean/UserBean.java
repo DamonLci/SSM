@@ -1,5 +1,6 @@
 package org.book.bean;
 
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -10,12 +11,16 @@ import java.util.Set;
  * @Date 2018/7/24 下午7:18
  * @Version 1.0
  **/
+@Entity
+@Table(name = "t_users")
 public class UserBean {
     private int id;
     private String userName;
     private String userPwd;
-    private Set<GoodsBean> goodsBeanSet=new HashSet<GoodsBean>();
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "u_id")
     public int getId() {
         return id;
     }
@@ -24,6 +29,7 @@ public class UserBean {
         this.id = id;
     }
 
+    @Column(name = "u_name")
     public String getUserName() {
         return userName;
     }
@@ -32,6 +38,7 @@ public class UserBean {
         this.userName = userName;
     }
 
+    @Column(name = "u_pass")
     public String getUserPwd() {
         return userPwd;
     }
@@ -40,11 +47,4 @@ public class UserBean {
         this.userPwd = userPwd;
     }
 
-    public Set<GoodsBean> getGoodsBeanSet() {
-        return goodsBeanSet;
-    }
-
-    public void setGoodsBeanSet(Set<GoodsBean> goodsBeanSet) {
-        this.goodsBeanSet = goodsBeanSet;
-    }
 }

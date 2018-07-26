@@ -1,9 +1,11 @@
 package org.book.action;
 
+import org.book.bean.UserBean;
+import org.book.service.IUserService;
+import org.book.service.impl.UserServiceImpl;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import javax.servlet.http.HttpServletRequest;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * @ClassName LoginAction
@@ -14,11 +16,17 @@ import javax.servlet.http.HttpServletRequest;
  **/
 @Controller
 public class LoginAction {
+    private IUserService userService=new UserServiceImpl();
     @RequestMapping("/login.action")
-    public String login(HttpServletRequest req){
-        System.out.println("test");
-        String name=req.getParameter("name");
-        req.setAttribute("name",name);
-        return "index.jsp";
+    public ModelAndView login(UserBean ub){
+        ModelAndView modelAndView=new ModelAndView();
+        boolean flag=userService.login(ub);
+        if(flag==true){
+            modelAndView.setViewName("success.jsp");
+        }
+        else{
+            modelAndView.setViewName("error.jsp");
+        }
+        return modelAndView;
     }
 }

@@ -19,8 +19,9 @@ public interface IGoodsDao {
     public List<GoodsBean> queryAll();
 
     /**
+     * @param id
      * 通过ID查询商品的详细信息
      * @return
      */
-    public GoodsBean queryById();
+    public GoodsBean queryById(int id);
 }

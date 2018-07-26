@@ -1,5 +1,6 @@
 package org.book.bean;
 
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -10,13 +11,25 @@ import java.util.Set;
  * @Date 2018/7/24 下午7:20
  * @Version 1.0
  **/
+@Entity
+@Table(name = "t_goods")
 public class GoodsBean {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "g_id")
     private int id;
+    @Column(name = "g_name")
     private String goodsName;
+    @Column(name = "g_type")
     private String category;
-    private String goodsPrice;
+    @Column(name = "g_price")
+    private double goodsPrice;
+    @Column(name = "g_img")
     private String goodsImg;
+    @OneToMany(mappedBy="goodsBean",cascade = CascadeType.ALL)
     private Set<CommentBean> commentBeanSet =new HashSet<CommentBean>();
+
+
 
     public int getId() {
         return id;
@@ -42,11 +55,11 @@ public class GoodsBean {
         this.category = category;
     }
 
-    public String getGoodsPrice() {
+    public double getGoodsPrice() {
         return goodsPrice;
     }
 
-    public void setGoodsPrice(String goodsPrice) {
+    public void setGoodsPrice(double goodsPrice) {
         this.goodsPrice = goodsPrice;
     }
 
