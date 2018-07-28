@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--创建一个数据源对象，创建连接处-->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>  <!--数据库连接驱动-->
+        <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/GoodsSystem"/>     <!--数据库地址-->
+        <property name="user" value="root"/>   <!--用户名-->
+        <property name="password" value="root"/>   <!--密码-->
+        <property name="maxPoolSize" value="40"/>      <!--最大连接数-->
+        <property name="minPoolSize" value="1"/>       <!--最小连接数-->
+        <property name="initialPoolSize" value="10"/>      <!--初始化连接池内的数据库连接-->
+        <property name="maxIdleTime" value="20"/>  <!--最大空闲时间-->
+    </bean>
+    <!-- spring组件扫描器 -->
+    <context:component-scan base-package="org.book.dao"></context:component-scan>
+    <context:component-scan base-package="org.book.service"></context:component-scan>
+    <!-- 创建一个SessionFactory对象-->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+    <property name="dataSource" ref="dataSource"/>
+    <property name="packagesToScan" value="org.book.bean"/>
+    <property name="hibernateProperties">
+        <props>
+            <prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop> <!--hibernate根据实体自动生成数据库表-->
+            <prop key="hibernate.dialect">${hibernate.dialect}</prop>   <!--指定数据库方言-->
+            <prop key="hibernate.show_sql">${hibernate.show_sql}</prop>     <!--在控制台显示执行的数据库操作语句-->
+            <prop key="hibernate.format_sql">${hibernate.format_sql}</prop>     <!--在控制台显示执行的数据哭操作语句（格式）-->
+        </props>
+    </property>
+        <property name="configLocations">
+            <list>
+                <value>
+                    classpath*:hibernate.cfg.xml
+                </value>
+            </list>
+        </property>
+    </bean>
+
+
+    <!-- 创建一个事务管理器 -->
+    <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+
+    <!--创建一个普通bean-->
+
+<!--    &lt;!&ndash; userDao&ndash;&gt;
+    <bean name="userdao" class="org.book.dao.impl.IUserDaoImpl">
+        <property name="fa" ref="sessionFactory">
+        </property>
+    </bean>
+    &lt;!&ndash;service&ndash;&gt;
+    <bean name="userService" class="org.book.service.impl.UserServiceImpl">
+        <property name="userDao" ref="userdao"></property>
+    </bean>-->
+
+
+</beans>
