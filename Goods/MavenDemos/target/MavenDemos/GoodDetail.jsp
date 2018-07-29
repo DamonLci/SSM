@@ -16,7 +16,7 @@
 
 
 <label>图片</label>${goodsBean.goodsImg}<br>
-<label>内容</label>${goodsBean.goodsPrice}<br>
+<label>价格</label>${goodsBean.goodsPrice}<br>
 <label>名字</label>${goodsBean.goodsName}<br>
 <label>类别</label>${goodsBean.category}<br>
 <h1>评论</h1>

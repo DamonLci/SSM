@@ -25,5 +25,17 @@ public interface IGoodsService {
      */
     public GoodsBean queryById(int goodsId);
 
+    /**
+     * 分页
+     * @param currentPage
+     * @return
+     */
+    public List<GoodsBean> queryByPage(int currentPage);
+
+    /**
+     * 总数
+     * @return
+     */
+    public Long count();
 
 }

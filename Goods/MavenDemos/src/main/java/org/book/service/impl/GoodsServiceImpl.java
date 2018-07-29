@@ -40,4 +40,27 @@ public class GoodsServiceImpl implements IGoodsService {
     public GoodsBean queryById(int goodsId) {
         return goodsDao.queryById(goodsId);
     }
+
+    /**
+     * 分页
+     *
+     * @param currentPage
+     * @return
+     */
+    @Override
+    public List<GoodsBean> queryByPage(int currentPage) {
+        return goodsDao.queryByPage(currentPage);
+    }
+
+    /**
+     * 总数
+     *
+     * @return
+     */
+    @Override
+    public Long count() {
+        return goodsDao.count();
+    }
+
+
 }

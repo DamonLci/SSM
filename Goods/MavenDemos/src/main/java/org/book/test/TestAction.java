@@ -29,7 +29,7 @@ public class TestAction {
     public void test1(){
         ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
         IGoodsDao dao=context.getBean(IGoodsDao.class);
-        List<GoodsBean> goodsBeans =dao.queryAll();
+        List<GoodsBean> goodsBeans =dao.queryByPage(2);
         System.out.println(goodsBeans);
     }
 }

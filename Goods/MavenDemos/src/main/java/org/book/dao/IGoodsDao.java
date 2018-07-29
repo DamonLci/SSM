@@ -19,9 +19,21 @@ public interface IGoodsDao {
     public List<GoodsBean> queryAll();
 
     /**
+     * 查询分页
+     * @param currentPage
+     * @return
+     */
+    public List<GoodsBean> queryByPage(int currentPage);
+    /**
      * @param id
      * 通过ID查询商品的详细信息
      * @return
      */
     public GoodsBean queryById(int id);
+
+    /**
+     * 总数
+     * @return
+     */
+    public Long count();
 }

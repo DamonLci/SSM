@@ -17,6 +17,7 @@
         <property name="maxIdleTime" value="20"/>  <!--最大空闲时间-->
     </bean>
     <!-- spring组件扫描器 -->
+
     <context:component-scan base-package="org.book.dao"></context:component-scan>
     <context:component-scan base-package="org.book.service"></context:component-scan>
     <!-- 创建一个SessionFactory对象-->

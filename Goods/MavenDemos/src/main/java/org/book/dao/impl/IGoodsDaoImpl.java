@@ -35,19 +35,34 @@ public class IGoodsDaoImpl implements IGoodsDao {
     public List<GoodsBean> queryAll() {
         Session session = fa.openSession();
         Query query = session.createQuery("from GoodsBean");
-        try {
-            List<GoodsBean> goodsBeans = query.list();
-            for (GoodsBean goodsbean:
-                    goodsBeans){
-                Hibernate.initialize(goodsbean.getCommentBeanSet());
-                return goodsBeans;
-            }
-        }catch (Exception e){
-            e.printStackTrace();
-        }finally {
-            session.close();
+
+
+        List<GoodsBean> goodsBeans = query.list();
+        for (GoodsBean goodsbean :
+                goodsBeans) {
+            Hibernate.initialize(goodsbean.getCommentBeanSet());
+            return goodsBeans;
+
+
         }
-        return null;
+        session.close();
+        return goodsBeans;
+    }
+
+    /**
+     * 查询分页
+     * @param currentPage
+     * @return
+     */
+    @Override
+    public List<GoodsBean> queryByPage(int currentPage) {
+        Session session = fa.openSession();
+        Query query = session.createQuery("from GoodsBean");
+        int first=(currentPage-1)*5;
+        query.setFirstResult(first);
+        query.setMaxResults(5);
+        List<GoodsBean> goodsBeans=query.list();
+        return goodsBeans;
     }
 
     /**
@@ -63,6 +78,18 @@ public class IGoodsDaoImpl implements IGoodsDao {
         Hibernate.initialize(goodsBean.getCommentBeanSet());
         session.close();
         return goodsBean;
+    }
+
+    /**
+     * 总数
+     *
+     * @return
+     */
+    @Override
+    public Long count() {
+        Session session=fa.openSession();
+        Long count =(Long)session.createQuery("select count(*) from GoodsBean").uniqueResult();
+        return count;
     }
 
 

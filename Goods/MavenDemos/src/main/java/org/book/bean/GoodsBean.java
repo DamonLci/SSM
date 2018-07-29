@@ -27,6 +27,7 @@ public class GoodsBean {
     @Column(name = "g_img")
     private String goodsImg;
 
+
     @Override
     public String toString() {
         return "GoodsBean{" +
@@ -91,4 +92,5 @@ public class GoodsBean {
     public void setCommentBeanSet(Set<CommentBean> commentBeanSet) {
         this.commentBeanSet = commentBeanSet;
     }
+
 }
