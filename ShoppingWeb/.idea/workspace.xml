@@ -36,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GoodDetail.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GoodDetail.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/javascript/private/GoodDetail.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="27" selection-start-line="27" selection-end-line="27" selection-end-column="12" />
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -48,13 +48,40 @@
       <file leaf-file-name="Goods.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/javascript/private/Goods.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="129" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="129" />
+            <state relative-caret-position="360">
+              <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModifPass.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GoodsDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Org/Shopping/Dao/GoodsDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoodsPo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Org/Shopping/Model/GoodsPo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Org/Shopping/Model/UserModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModifPass.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/javascript/private/ModifPass.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
@@ -68,20 +95,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="17" column="73" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CheckOut.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/javascript/private/CheckOut.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="CheckOutServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Org/Shopping/Servlet/CheckOutServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -176,7 +189,6 @@
         <option value="$PROJECT_DIR$/web/CartList.jsp" />
         <option value="$PROJECT_DIR$/web/User/CartList.jsp" />
         <option value="$PROJECT_DIR$/web/User/CarList.html" />
-        <option value="$PROJECT_DIR$/web/javascript/private/Goods.js" />
         <option value="$PROJECT_DIR$/src/Org/Shopping/Servlet/GoodDetailServlet.java" />
         <option value="$PROJECT_DIR$/src/Org/Shopping/Service/ReduceCartService.java" />
         <option value="$PROJECT_DIR$/src/Org/Shopping/Servlet/AddCartServlet.java" />
@@ -204,6 +216,7 @@
         <option value="$PROJECT_DIR$/web/shop-detail.jsp" />
         <option value="$PROJECT_DIR$/web/javascript/private/GoodDetail.js" />
         <option value="$PROJECT_DIR$/src/Org/Shopping/Servlet/RegisterServlet.java" />
+        <option value="$PROJECT_DIR$/web/javascript/private/Goods.js" />
       </list>
     </option>
   </component>
@@ -233,7 +246,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -337,6 +349,7 @@
       </pane>
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -624,11 +637,12 @@
       <workItem from="1532251016627" duration="73000" />
       <workItem from="1532253409921" duration="25000" />
       <workItem from="1532256326152" duration="57000" />
+      <workItem from="1532939847544" duration="1819000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109301000" />
+    <option name="totallyTimeSpent" value="111120000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1123" extended-state="6" />
@@ -689,13 +703,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Org/Shopping/Model/GoodsPo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="98" column="55" selection-start-line="98" selection-start-column="48" selection-end-line="98" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Org/Shopping/Model/ViewCartPo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -756,13 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Org/Shopping/Dao/GoodsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -959,23 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/javascript/private/CheckOut.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/javascript/private/GoodDetail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="27" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/javascript/private/Goods.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="129" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="129" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Org/Shopping/Service/ModifyPassService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -994,6 +977,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/javascript/private/Goods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Org/Shopping/Dao/GoodsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Org/Shopping/Model/UserModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Org/Shopping/Model/GoodsPo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/javascript/private/GoodDetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>

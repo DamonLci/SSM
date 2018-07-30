@@ -1,5 +1,8 @@
 package org.book.bean;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
@@ -88,7 +91,7 @@ public class GoodsBean {
     public Set<CommentBean> getCommentBeanSet() {
         return commentBeanSet;
     }
-
+    @JsonBackReference
     public void setCommentBeanSet(Set<CommentBean> commentBeanSet) {
         this.commentBeanSet = commentBeanSet;
     }
