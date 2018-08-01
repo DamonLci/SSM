@@ -11,6 +11,8 @@
     <title>Title</title>
 </head>
 <body>
-success
+登录成功！success！
+<a href="GoodListAjax.jsp">Ajax主页列表</a>
+<a href="/goodsList.action">ModelAndView主页列表</a>
 </body>
 </html>

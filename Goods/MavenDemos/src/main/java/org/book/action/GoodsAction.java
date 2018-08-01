@@ -53,7 +53,7 @@ public class GoodsAction {
 
     @RequestMapping("/queryPage.action")
     public @ResponseBody  Map<String, Object> queryByPage(@RequestParam Integer currentPage) {
-        List<GoodsBean> goodsBeans = goodsService.queryByPage(0);
+        List<GoodsBean> goodsBeans = goodsService.queryByPage(currentPage);
 
         Long count = goodsService.count();
         int totalPage = (int) (count / 5)+1;
@@ -61,6 +61,7 @@ public class GoodsAction {
         res.put("count", count);
         res.put("goodsBeans", goodsBeans);
         res.put("totalPage", totalPage);
+        res.put("currentPage",currentPage);
 
         return res;
     }

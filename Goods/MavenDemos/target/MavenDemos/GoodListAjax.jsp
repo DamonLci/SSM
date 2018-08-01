@@ -28,7 +28,7 @@
         border: 1px solid black;
         margin-top: 100px;
         margin-left: 100px;
-        font-size: 25;
+        font-size: 25px;
     }
 
     #body {
@@ -84,17 +84,25 @@
             <div>类别</div>
             <div>评论数量</div>
         </div>
-        <c:forEach items="${goodsBeans}" var="obj">
+
         <div id="content">
-            <div>
-                <a href="goodsDetail.action?id=${obj.id}">${obj.goodsName}</a>
-            </div>
-            <div>${obj.goodsPrice}</div>
-            <div>${obj.category}</div>
-            <div>${fn:length(obj.commentBeanSet)}</div>
+
         </div>
-        </c:forEach>
-<div id="contents"></div>
+        <div id="turnpage">
+            <ul>
+                <li class="down" onclick="firstPage()"><a href='javascript:;'onclick="startPage()">首页</a></li>
+                <li class="down" onclick="lastPage()"><a href='javascript:;'onclick="lastPage()">上一页</a></li>
+                <li class="down"><span id="currentPage"></span>/ <span
+                        id="totalPage"></span></li>
+                <li class="down" onclick="nextPage()"><a href='javascript:;'onclick="nextPage()"> 下一页</a></li>
+                <li class="down" onclick="endPage()"><a href='javascript:;'onclick="endPage()">末页</a></li>
+            </ul>
+        </div>
+
+        <div id="contents"></div>
+
+    </div>
+</div>
 </body>
 <script>
     function showPage(ppage) {
@@ -112,16 +120,45 @@
                 var content = "";
                 for (var i = 0; i < goods.length; i++) {
                     var good=goods[i];
-                    content += good.goodsName+good.category+good.goodsPrice
+                    content +="<div> <a href='goodsDetail.action?id="+good.id+"' >"+good.goodsName+"</a></div>"+
+                        "<div>"+good.goodsPrice+"</div>"+
+                        "<div>"+good.category+"</div>"+
+                        "<div>"+good.commentBeanSet.length+"</div>"
+
                 }
-                $("#contents").html(content);
+                $("#content").html(content);
+                $("#totalPage").html(totalPage);
+                $("#currentPage").html(currentPage);
 
 
             }
         })
     }
 
-    //showPage(1);
-
+    showPage(1);
+    function nextPage() {
+        var scurrentPage=$("#currentPage").html();
+        var currentPage=parseInt(scurrentPage);
+        var nextPage=currentPage+1;
+        var totalPage=parseInt($("#totalPage").html());
+        if(nextPage<=totalPage){
+            showPage(nextPage);
+        }
+    }
+    function lastPage() {
+        var scurrentPage=$("#currentPage").html();
+        var currentPage=parseInt(scurrentPage);
+        var lastPage=currentPage-1;
+        if(lastPage>0){
+            showPage(lastPage);
+        }
+    }
+    function endPage() {
+        var totalPage=parseInt($("#totalPage").html());
+        showPage(totalPage);
+    }
+    function startPage() {
+        showPage(1);
+    }
 </script>
 </html>

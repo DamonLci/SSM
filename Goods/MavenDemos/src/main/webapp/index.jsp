@@ -14,7 +14,9 @@
   <form method="post" action="login.action">
     <label>登录名</label> <input name="userName" type="text"/>
     <label>密码</label> <input name="userPwd" type="password"/>
-    <input type="submit" value="登录"/>
+    <input type="submit" value="登录"/><br>
+    <a href="GoodListAjax.jsp">Ajax主页列表</a>
+    <a href="/goodsList.action">ModelAndView主页列表</a>
 
 
   </form>

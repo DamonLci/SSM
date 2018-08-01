@@ -29,7 +29,7 @@ public class LoginAction {
         HttpSession session=req.getSession();
         boolean flag=userService.login(ub);
         if(flag==true){
-            modelAndView.setViewName("goodsList.action");
+            modelAndView.setViewName("success.jsp");
             session.setAttribute(Mark.USER, ub);
         }
         else{

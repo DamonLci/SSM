@@ -11,6 +11,8 @@
     <title>Title</title>
 </head>
 <body>
-error
+登录失败！error！
+<a href="GoodListAjax.jsp">Ajax主页列表</a>
+<a href="/goodsList.action">ModelAndView主页列表</a>
 </body>
 </html>
