@@ -3,12 +3,14 @@ package org.book.action;
 import org.book.bean.UserBean;
 import org.book.service.IUserService;
 import org.book.service.impl.UserServiceImpl;
+import org.book.util.Mark;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 /**
  * @ClassName LoginAction
@@ -24,9 +26,11 @@ public class LoginAction {
     @RequestMapping("/login.action")
     public ModelAndView login(UserBean ub, HttpServletRequest req){
         ModelAndView modelAndView=new ModelAndView();
+        HttpSession session=req.getSession();
         boolean flag=userService.login(ub);
         if(flag==true){
-            modelAndView.setViewName("success.jsp");
+            modelAndView.setViewName("goodsList.action");
+            session.setAttribute(Mark.USER, ub);
         }
         else{
             modelAndView.setViewName("error.jsp");

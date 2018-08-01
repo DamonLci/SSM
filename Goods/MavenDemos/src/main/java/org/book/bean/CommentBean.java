@@ -1,5 +1,7 @@
 package org.book.bean;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -26,6 +28,10 @@ public class CommentBean {
     private String commentContent;
     @Column(name = "c_date")
     private Date date;
+    @Transient
+    private int gid;
+    @Transient
+    private String time;
 
     public Date getDate() {
         return date;
@@ -55,6 +61,18 @@ public class CommentBean {
         return goodsBean;
     }
 
+    @Override
+    public String toString() {
+        return "CommentBean{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", commentContent='" + commentContent + '\'' +
+                ", date=" + date +
+                ", gid=" + gid +
+                '}';
+    }
+
+    @JsonIgnore
     public void setGoodsBean(GoodsBean goodsBean) {
         this.goodsBean = goodsBean;
     }
@@ -65,5 +83,21 @@ public class CommentBean {
 
     public void setCommentContent(String commentContent) {
         this.commentContent = commentContent;
+    }
+
+    public int getGid() {
+        return gid;
+    }
+
+    public void setGid(int gid) {
+        this.gid = gid;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
     }
 }

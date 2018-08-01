@@ -24,4 +24,5 @@ public interface ICommentDao {
      * @param commentBean
      */
     public void insertComment(CommentBean commentBean);
+
 }

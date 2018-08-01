@@ -2,6 +2,8 @@ package org.book.service;
 
 import org.book.bean.CommentBean;
 
+import java.util.List;
+
 /**
  * @ClassName ICommentService
  * @Description TODO
@@ -15,6 +17,7 @@ public interface ICommentService {
      * @param commentBean
      * @return
      */
-    public void addComment(CommentBean commentBean);
+    public String  addComment(CommentBean commentBean);
 
+    public List<CommentBean> queryAll(int gid);
 }

@@ -27,20 +27,15 @@
 <button type="button" onclick="nextPage()">ajax访问传递json</button>
 </body>
 <script >
-    function nextPage(ppage) {
+    function nextPage() {
         $.ajax({
             url: "/queryPage.action",
             method: "post",
             async: true,
-            dataType:"json",
-            data:
-                page:ppage
-    },
-            success: function (data) {
+            dataType: "json",
+            data:,
 
-            }
-
-        })
+    })
     }
 </script>
 </html>

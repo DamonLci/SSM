@@ -2,7 +2,10 @@ package org.book.dao.impl;
 
 import org.book.bean.CommentBean;
 import org.book.dao.ICommentDao;
+import org.hibernate.Query;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -27,6 +30,20 @@ public class ICommentDaoImpl implements ICommentDao {
      */
     @Override
     public List<CommentBean> queryByGoodsId(int goodsId) {
+        Session session=fa.openSession();
+        Transaction tr=session.beginTransaction();
+        try{
+            Query query=session.createQuery("from CommentBean where c_g_id=?");
+            query.setInteger(0,goodsId);
+            List<CommentBean> commentBeans=query.list();
+            tr.commit();
+            return commentBeans;
+        }catch (Exception e){
+            tr.rollback();
+            e.printStackTrace();
+        }finally {
+            session.close();
+        }
         return null;
     }
 
@@ -37,6 +54,17 @@ public class ICommentDaoImpl implements ICommentDao {
      */
     @Override
     public void insertComment(CommentBean commentBean) {
+        Session session=fa.openSession();
+        Transaction te=session.beginTransaction();
+        try {
+            session.save(commentBean);
+            te.commit();
+        }catch (Exception e){
+            te.rollback();
+            e.printStackTrace();
+        }finally {
+            session.close();
+        }
+    }
 
     }
-}

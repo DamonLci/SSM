@@ -43,7 +43,7 @@ public class GoodsBean {
                 '}';
     }
 
-    @OneToMany(mappedBy="goodsBean",cascade = CascadeType.ALL)
+    @OneToMany(mappedBy="goodsBean",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     private Set<CommentBean> commentBeanSet =new HashSet<CommentBean>();
 
 
@@ -63,6 +63,8 @@ public class GoodsBean {
     public void setGoodsName(String goodsName) {
         this.goodsName = goodsName;
     }
+
+
 
     public String getCategory() {
         return category;
@@ -91,7 +93,7 @@ public class GoodsBean {
     public Set<CommentBean> getCommentBeanSet() {
         return commentBeanSet;
     }
-    @JsonBackReference
+
     public void setCommentBeanSet(Set<CommentBean> commentBeanSet) {
         this.commentBeanSet = commentBeanSet;
     }

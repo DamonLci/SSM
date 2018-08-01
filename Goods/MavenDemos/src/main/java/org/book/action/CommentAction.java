@@ -6,7 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.List;
+
 
 /**
  * @ClassName CommentAction
@@ -20,9 +24,16 @@ public class CommentAction {
     @Autowired
     private ICommentService commentService;
     @RequestMapping("/comment.action")
-    public @ResponseBody String commentAction(@RequestBody CommentBean commentBean){
+    public @ResponseBody  String commentAction(@RequestBody CommentBean commentBean){
+        String res=commentService.addComment(commentBean);
+        return res;
+    }
 
+    @RequestMapping("/showComment.action")
+    public @ResponseBody List<CommentBean> showCommentAction(@RequestParam Integer gid){
 
-        return "success";
+        List<CommentBean> commentBeans=commentService.queryAll(gid);
+        //System.out.println(commentBeans);
+        return commentBeans;
     }
 }

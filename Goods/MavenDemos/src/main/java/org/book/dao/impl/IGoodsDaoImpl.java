@@ -38,13 +38,6 @@ public class IGoodsDaoImpl implements IGoodsDao {
 
 
         List<GoodsBean> goodsBeans = query.list();
-        for (GoodsBean goodsbean :
-                goodsBeans) {
-            Hibernate.initialize(goodsbean.getCommentBeanSet());
-            return goodsBeans;
-
-
-        }
         session.close();
         return goodsBeans;
     }
@@ -75,7 +68,6 @@ public class IGoodsDaoImpl implements IGoodsDao {
         Query query = session.createQuery("from GoodsBean where g_id=?");
         query.setInteger(0, id);
         GoodsBean goodsBean = (GoodsBean) query.uniqueResult();
-        Hibernate.initialize(goodsBean.getCommentBeanSet());
         session.close();
         return goodsBean;
     }
